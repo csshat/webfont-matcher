@@ -17,3 +17,6 @@ describe 'Webfont matcher', ->
 
   it 'should find google font and typekit', ->
     expect(matchFont('Droid Sans').length).toEqual(2)
+
+  it 'should find most relevant font', ->
+    expect(matchFont('PlayfairDisplay')[0].name).toEqual('Playfair Display')

@@ -5,10 +5,18 @@ normalize = (str) ->
   str.toLowerCase().replace /( |-)/g, ''
 
 matchFontInLibrary = (name, normalizedName, library) ->
-  fonts = library.getNames().filter (font) ->
-    name is font or normalizedName.indexOf(normalize(font)) > -1 or normalize(font).indexOf(normalizedName) > -1
-  if fonts.length
-    {library, name: fonts[0]}
+  result = null
+  for font in library.getNames()
+    normalizedFont = normalize(font)
+
+    if name is font or normalizedName is normalizedFont
+      result = font
+      break
+    else if normalizedName.indexOf(normalizedFont) > -1 or normalizedFont.indexOf(normalizedName) > -1
+      result = font
+
+  if result
+    {library, name: result}
 
 matchFontInLibraries = (name, libraries) ->
   normalizedName = normalize(name)
