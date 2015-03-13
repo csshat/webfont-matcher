@@ -1,6 +1,6 @@
 {
   "name": "webfont-matcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "Webfont matcher",
   "main": "lib/main",
   "description": "Tries to match your font to various webfont services and provide you with a link to use it",
