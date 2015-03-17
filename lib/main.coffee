@@ -29,8 +29,7 @@ matchFontInLibraries = (name, libraries) ->
 
 processFont = ({library, name}) ->
   return {
-    libraryName: library.name
-    libraryIcon: library.icon
+    library: library
     name: library.normalizeName(name)
     link: library.getLink(name)
   }
