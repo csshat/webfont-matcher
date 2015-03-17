@@ -1,6 +1,8 @@
 module.exports =
   icon: 'icons/google.svg'
   name: 'google'
+  title: 'Google Fonts'
+  link: 'google.com/fonts'
   getNames: ->
     families
   getLink: (name) ->

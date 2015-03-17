@@ -1,6 +1,8 @@
 module.exports =
   icon: 'icons/typekit.svg'
   name: 'typekit'
+  title: 'Typekit'
+  link: 'typekit.com'
   getNames: ->
     Object.keys families
   getLink: (name) ->
