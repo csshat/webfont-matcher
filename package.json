@@ -18,7 +18,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "test": "jasmine-node spec --coffee"
+    "test": "jasmine-node spec --coffee",
+    "prepublish": "coffee -o lib/ src/"
   },
   "devDependencies": {
     "coffee-script": "^1.9.1",

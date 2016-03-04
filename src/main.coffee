@@ -1,5 +1,5 @@
-google = require '../fonts/google'
-typekit = require '../fonts/typekit'
+google = require './fonts/google'
+typekit = require './fonts/typekit'
 
 normalize = (str) ->
   str.toLowerCase().replace /( |-)/g, ''

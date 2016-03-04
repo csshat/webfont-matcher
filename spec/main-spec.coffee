@@ -1,5 +1,5 @@
 # require main module (defined as `main` in package.json)
-{matchFont} = require '..'
+{matchFont} = require '../src/main'
 
 
 describe 'Webfont matcher', ->
