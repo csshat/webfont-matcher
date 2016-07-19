@@ -6,7 +6,7 @@ module.exports =
   getNames: ->
     families
   getLink: (name) ->
-    "https://www.google.com/fonts#UsePlace:use/Collection:#{name.replace(/( )/g, '+')}"
+    "https://fonts.google.com/specimen/#{name.replace(/( )/g, '+')}"
   normalizeName: (name) ->
     name
 
